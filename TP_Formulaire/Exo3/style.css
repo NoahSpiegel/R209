@@ -1,0 +1,40 @@
+fieldset {
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+legend {
+    font-weight: bold;
+    font-size: 20px;
+    display: table;
+    margin: auto;
+}
+
+.img{
+    text-align: center;
+    high: 120px;
+}
+
+.valeur{
+    text-align: center;
+    margin-top: 30px;
+}
+input[type="submit"]{
+    background-color: #317AC1;
+    color: white;
+    margin-top; 20px;
+    width: 240px;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+}
+body{
+    text-align: center;
+    background-color: #E0E0E0;
+    max-width: 600px;
+}
+.calculer{
+    margin: 20px;
+}
