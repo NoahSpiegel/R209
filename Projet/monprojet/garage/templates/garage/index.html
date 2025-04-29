@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+{% load static %}
+    <meta charset="UTF-8">
+    <title>{% block title %}Garage {% endblock %} </title>
+</head>
+<body style="background-color:#FFA07A">
+    <h1 style="text-align:center;">Bienvenue dans mon garage !</h1>
+    <img src="https://www.prestigeetcollection.com/wp-content/uploads/2021/04/Garage-PC-Alignement-voiture.jpg"/>
+    <p style="padding-top:10px; padding-bot:10px;color:blue;font-size: 20px">Veuillez remplir le formulaire suivant pour ajouter une voiture au garage.</p>
+    <form method="post" action="/garage/traitement/" style="padding-top:20px;">
+        {% csrf_token %}
+        {{ form.as_ul }}
+        <input type="submit" value="Envoyer">
+    </form>
+<footer>
+    <p style="padding-top:40px; font-size:12px; text-align:center;">Garage de Noah Spiegel, RT132</p>
+</footer>
+</body>
+</html>

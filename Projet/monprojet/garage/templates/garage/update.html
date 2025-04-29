@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mise à jour</title>
+</head>
+<body>
+    <form method="post" action="/garage/traitementupdate/{{id}}">
+        {% csrf_token %}
+        {{ form.as_ul }}
+        <input type="submit" value="Envoyer">
+    </form>
+</body>
+</html>
