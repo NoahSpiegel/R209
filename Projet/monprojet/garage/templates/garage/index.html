@@ -7,7 +7,9 @@
 </head>
 <body style="background-color:#FFA07A">
     <h1 style="text-align:center;">Bienvenue dans mon garage !</h1>
-    <img src="https://www.prestigeetcollection.com/wp-content/uploads/2021/04/Garage-PC-Alignement-voiture.jpg"/>
+    <div style="dispay:flex; justify-content:center;" >
+        <img src="https://www.prestigeetcollection.com/wp-content/uploads/2021/04/Garage-PC-Alignement-voiture.jpg"/>
+    </div>
     <p style="padding-top:10px; padding-bot:10px;color:blue;font-size: 20px">Veuillez remplir le formulaire suivant pour ajouter une voiture au garage.</p>
     <form method="post" action="/garage/traitement/" style="padding-top:20px;">
         {% csrf_token %}

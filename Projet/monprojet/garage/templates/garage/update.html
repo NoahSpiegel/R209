@@ -5,10 +5,10 @@
     <title>Mise à jour</title>
 </head>
 <body>
-    <form method="post" action="/garage/traitementupdate/{{id}}">
+    <form method="post">
         {% csrf_token %}
-        {{ form.as_ul }}
-        <input type="submit" value="Envoyer">
+        {{ form.as_p }}
+        <button type="submit">Mettre à jour</button>
     </form>
 </body>
 </html>

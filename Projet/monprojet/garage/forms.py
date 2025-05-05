@@ -13,3 +13,4 @@ class VoitureForm(ModelForm):
             'couleur' : _('Couleur de la voiture'),
             'immatriculation' : _('Immatriculation de la voiture'),
         }
+
